@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : Users.xml
+    Created on : November 20, 2006, 10:03 PM
+    Author     : Zack
+    Description:
+        Purpose of the document follows.
+-->
+
+<users>
+    <user>
+        <login>admin</login>
+        <password>intuit456</password>
+        <isAdmin>true</isAdmin>
+    </user>
+    <user>
+        <login>gwashington</login>
+        <firstName>George</firstName>
+        <lastName>Washington</lastName>
+        <id>1</id>
+        <rolePriority>1</rolePriority>
+        <roleName>Conductor</roleName>
+        <password>intuit456</password>
+        <hasSubordinates>true</hasSubordinates>
+    </user>
+    <user>
+        <login>jdoe</login>
+        <firstName>John</firstName>
+        <lastName>Doe</lastName>
+        <id>2</id>
+        <rolePriority>2</rolePriority>
+        <roleName>Leader</roleName>
+        <superiorId>1</superiorId>
+        <password>123456</password>
+        <hasSubordinates>true</hasSubordinates>
+    </user>
+    <user>
+        <login>jdoe2</login>
+        <firstName>Jane</firstName>
+        <lastName>Doe</lastName>
+        <id>3</id>
+        <rolePriority>3</rolePriority>
+        <roleName>player</roleName>
+        <superiorId>2</superiorId>
+        <password>intuit456</password>
+        <hasSubordinates>false</hasSubordinates>
+    </user>
+    <user>
+        <login>tjefferson</login>
+        <firstName>Tom</firstName>
+        <lastName>Jefferson</lastName>
+        <id>4</id>
+        <rolePriority>2</rolePriority>
+        <roleName>Leader</roleName>
+        <superiorId>1</superiorId>
+        <password>intuit456</password>
+        <hasSubordinates>true</hasSubordinates>
+    </user>
+</users>

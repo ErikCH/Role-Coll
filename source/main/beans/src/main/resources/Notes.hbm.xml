@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="">
+
+    <class name="rolecoll.beans.NoteBean" table="NOTES">
+        <id name="noteID" type="long" column="NOTE_ID">
+            <generator class="assigned"/>
+        </id>
+        <property name="documentID" type="long" column="DOCUMENT_ID"/>
+        <property name="pageNumber" type="long" column="PAGE_NUMBER"/>
+        <property name="noteLocationX" type="long" column="NOTE_LOCATION_X"/>
+        <property name="noteLocationY" type="long" column="NOTE_LOCATION_Y"/>
+        <property name="noteHeight" type="long" column="NOTE_HEIGHT"/>
+        <property name="noteWidth" type="long" column="NOTE_WIDTH"/>
+        <property name="noteClass" type="string" column="NOTE_CLASS"/>
+        <property name="noteContent" type="string" column="NOTE_CONTENT"/>
+        <property name="noteFont" type="string" column="NOTE_FONT"/>
+        <property name="noteColor" type="string" column="NOTE_COLOR"/>
+        <property name="userPriority" type="string" column="USER_PRIORITY"/>
+        <property name="userID" type="long" column="USER_ID"/>
+    </class>
+
+</hibernate-mapping>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="">
+
+    <class name="rolecoll.beans.UserBean" table="USERS">
+        <id name="userID" type="long" column="USER_ID">
+            <generator class="assigned"/>            
+        </id>
+        <property name="userFirstName" type="string" column="USER_FIRST_NAME"/>
+        <property name="userLastName" type="string" column="USER_LAST_NAME"/>
+        <property name="userLogin" type="string" column="USER_LOGIN_NAME"/>
+        <property name="rolePriority" type="string" column="USER_ROLE"/>
+        <property name="roleName" type="string" column="USER_ROLE_NAME"/>
+        <property name="superiorID" type="string" column="USER_SUPERIOR_ID"/>
+        <property name="password" type="string" column="USER_PASSWORD"/>
+        <property name="admin" type="boolean" column="USER_IS_ADMIN"/>                
+    </class>
+
+</hibernate-mapping>

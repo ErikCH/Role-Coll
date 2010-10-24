@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Managers>
+    <DockingManager allowedDockSides="31" autoDocking="true"
+        autoDockingAsDefault="true" autohidable="true"
+        autohideAllTabs="true" continuousLayout="false"
+        crossDraggingAllowed="false" crossDroppingAllowed="false"
+        doubleClickAction="0" dragAllTabs="true" dragGripperOnly="true"
+        easyTabDock="false" floatAllTabs="true" floatable="true"
+        groupAllowedOnSidePane="true" hidable="true" hideAllTabs="false"
+        hideFloatingFramesOnSwitchOutOfApplication="false"
+        hideFloatingFramesWhenDeactivate="false"
+        initBounds="5; 5; 800; 600" initCenterSplit="1" initDelay="400"
+        initEastSplit="0" initNorthSplit="1" initSouthSplit="1"
+        initSplitPriority="1" initState="0" initWestSplit="0"
+        maximizeAllTabs="true" nestedFloatingAllowed="true"
+        outlineMode="0" preserveStateOnDragging="false"
+        profileKey="designer-workspace" rearrangable="true"
+        resizable="true" showDividerGripper="false" showGripper="false"
+        showTitleBar="true" showWorkspace="true" sideDockAllowed="true"
+        sidebarRollover="true" stepDelay="20" steps="1"
+        tabDockAllowed="true" tabReorderAllowed="true" undoLimit="0"
+        usePref="true" withinFrameBoundsOnDragging="false">
+        <DockableFrames>
+            <DockableFrame autohidable="true" autohide="true"
+                autohideHeight="200" autohideShowing="false"
+                autohideWidth="200" availableButtons="14"
+                dockable="true" docked="false" dockedHeight="200"
+                dockedWidth="200" floatable="false" floated="false"
+                hidable="true" hidden="false" initIndex="0" initMode="2"
+                initSide="8" key="Users" maximizable="true"
+                maximized="false" preferredAutohideSide="-1"
+                preferredSize="200; 200" rearrangable="true"
+                showGripper="false" showTitleBar="true"
+                sideDockAllowed="true" sideTitle="Users"
+                slidingAutohide="true" tabDockAllowed="true"
+                tabTitle="Users" title="Users" undockedBounds="858; 90; 200; 200"/>
+            <DockableFrame autohidable="true" autohide="true"
+                autohideHeight="200" autohideShowing="false"
+                autohideWidth="200" availableButtons="14"
+                dockable="true" docked="false" dockedHeight="200"
+                dockedWidth="200" floatable="false" floated="false"
+                hidable="true" hidden="false" initIndex="0" initMode="2"
+                initSide="4" key="Tools" maximizable="true"
+                maximized="false" preferredAutohideSide="-1"
+                preferredSize="200; 200" rearrangable="true"
+                showGripper="false" showTitleBar="true"
+                sideDockAllowed="true" sideTitle="Tools"
+                slidingAutohide="true" tabDockAllowed="true"
+                tabTitle="Tools" title="Tools" undockedBounds="10; 10; 200; 200"/>
+        </DockableFrames>
+    </DockingManager>
+    <DockableBarManager floatable="true" hidable="true"
+        hideFloatingDockableBarsWhenDeactivate="true"
+        initBounds="5; 5; 800; 600" initState="0"
+        profileKey="designer-workspace" rearrangable="true"
+        showContextMenu="true" usePref="true">
+        <DockableBars>
+            <DockableBar allowedDockSides="15" floatable="true"
+                floating="false" hidable="true" hidden="false"
+                horiDocked="true" initIndex="0" initMode="2"
+                initSide="1" initSubindex="0" key="Menu" menuBar="true"
+                paintBackground="true" rearrangable="true"
+                stretch="false" title="Menu"
+                undockedBounds="10; 10; 0; 0" vertDocked="false"/>
+        </DockableBars>
+    </DockableBarManager>
+</Managers>

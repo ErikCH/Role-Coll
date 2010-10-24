@@ -1,0 +1,14 @@
+<roles>
+    <role>
+        <name>Conductor</name>
+        <priority>1</priority>
+    </role>
+    <role>
+        <name>Leader</name>
+        <priority>2</priority>
+    </role>
+    <role>
+        <name>Player</name>
+        <priority>3</priority>
+    </role>
+</roles>

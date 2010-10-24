@@ -1,0 +1,108 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>rolecoll</groupId>
+    <artifactId>ui</artifactId>
+    <packaging>jar</packaging>
+    <version>1.0.0</version>
+    <name>Role-Coll:ui (Role-Coll User Interface)</name>
+
+    <dependencies>
+        <dependency>
+            <groupId>rolecoll</groupId>
+            <artifactId>beans</artifactId>
+            <version>1.0.0</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
+            <version>1.0.4</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+	            <groupId>flexdock</groupId>
+	            <artifactId>flexdoc</artifactId>
+	            <version>0.5.1</version>
+	            <scope>compile</scope>
+        </dependency>
+        <dependency>
+	            <groupId>org.jdesktop</groupId>
+	            <artifactId>swing-layout</artifactId>
+	            <version>1.0</version>
+	            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>jtattoo</groupId>
+            <artifactId>jtattoo</artifactId>
+            <version>1.1.12</version>
+            <scope>compile</scope>
+        </dependency>        
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>copy-dependencies</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>copy-dependencies</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>${project.build.directory}</outputDirectory>
+                            <overWriteReleases>false</overWriteReleases>
+                            <overWriteSnapshots>true</overWriteSnapshots>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <configuration>
+                    <skip>true</skip>
+                    <output>html</output>
+                    <testFailureIgnore>true</testFailureIgnore>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <mainClass>rolecoll.ui.frames.LoginFrame</mainClass>
+                            <addClasspath>true</addClasspath>
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <reporting>
+
+    </reporting>
+
+    <repositories>
+    </repositories>
+
+    <developers>
+        <developer>
+            <id>ZNorcross</id>
+            <name>Zack Norcross</name>
+            <email>Zack_Norcross@intuit.com</email>
+            <roles>
+                <role>Developer</role>
+            </roles>
+            <timezone>-8</timezone>
+            <properties/>
+        </developer>
+    </developers>
+
+</project>

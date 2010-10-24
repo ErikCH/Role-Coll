@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="">
+
+    <class name="rolecoll.beans.DocumentBean" table="DOCUMENTS">
+        <id name="docID" type="long" column="DOCUMENT_ID">
+            <generator class="assigned"/>
+        </id>
+        <property name="docName" type="string" column="DOCUMENT_NAME"/>
+        <property name="imageList" type="string" column="IMAGE_LIST"/>                    
+    </class>
+
+</hibernate-mapping>

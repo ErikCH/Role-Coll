@@ -1,0 +1,104 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>rolecoll</groupId>
+    <artifactId>RoleColl</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0.0</version>
+    <name>Role-Coll:main (Parent Role-Cole Project)</name>
+    <url>http://maven.apache.org</url>
+    <modules>
+        <module>beans</module>
+        <module>ui</module>
+    </modules>
+
+    <dependencies>
+        <dependency>
+            <groupId>xerces</groupId>
+            <artifactId>xerces</artifactId>
+            <version>2.4.0</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>pmd</groupId>
+            <artifactId>pmd</artifactId>
+            <version>3.4</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+    
+   <reporting>
+      <plugins>
+         <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-javadoc-plugin</artifactId>
+            <reportSets>               
+		<reportSet>
+                  <id>uml</id>
+                  <configuration>
+                     <doclet>gr.spinellis.umlgraph.doclet.UmlGraph</doclet>
+                     <!--docletPath>/path/to/UMLGraph.jar</docletPath-->
+                     <docletArtifact>
+                        <groupId>umlgraph</groupId>
+                        <artifactId>UMLGraph</artifactId>
+                        <version>4.3</version>
+                     </docletArtifact>
+                     <additionalparam>-views</additionalparam>
+                     <destDir>target/uml</destDir>
+                     <show>private</show>
+                  </configuration>
+                  <reports>
+                     <report>javadoc</report>
+                  </reports>
+               </reportSet>
+               <reportSet>
+                  <id>html</id>
+                  <configuration>
+                     <show>private</show>
+                  </configuration>
+                  <reports>
+                     <report>javadoc</report>
+                  </reports>
+               </reportSet>
+            </reportSets>
+         </plugin>
+      </plugins>
+   </reporting>
+
+   <build>
+      <plugins>
+         <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-javadoc-plugin</artifactId>
+            <configuration>
+               <doclet>gr.spinellis.umlgraph.doclet.UmlGraph</doclet>
+               <!--docletPath>/path/to/UmlGraph.jar</docletPath-->
+               <docletArtifact>
+                  <groupId>umlgraph</groupId>
+                  <artifactId>UMLGraph</artifactId>
+                  <version>4.3</version>
+               </docletArtifact>
+               <additionalparam>-views</additionalparam>
+               <destDir>target/uml</destDir>
+               <show>private</show>
+            </configuration>
+         </plugin>
+      </plugins>
+   </build>
+    
+
+    <developers>
+        <developer>
+            <id>ZNorcross</id>
+            <name>Zack Norcross</name>
+            <email>Zack_Norcross@intuit.com</email>
+            <roles>
+                <role>Developer</role>
+            </roles>
+            <timezone>-8</timezone>
+            <properties/>
+        </developer>
+    </developers>
+
+</project>

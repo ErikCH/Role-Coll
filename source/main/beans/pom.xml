@@ -1,0 +1,73 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>rolecoll</groupId>
+  <artifactId>beans</artifactId>
+  <packaging>jar</packaging>
+  <version>1.0.0</version>
+  <name>Role-Coll:beans (Role-Coll Objects)</name>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate</artifactId>
+            <version>3.0.5</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>3.8.1</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>5.0.5</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <configuration>
+          <skip>false</skip>
+          <output>html</output>
+          <testFailureIgnore>true</testFailureIgnore>
+        </configuration>
+      </plugin>      
+    </plugins>
+  </build>
+
+  <reporting>
+    
+  </reporting>
+
+    <repositories>
+        <repository>
+            <id>Central Repository</id>
+            <url>http://repo1.maven.org/maven2/</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>            
+        </repository>
+    </repositories>
+
+  <developers>
+    <developer>
+      <id>ZNorcross</id>
+      <name>Zack Norcross</name>
+      <email>Zack_Norcross@intuit.com</email>      
+      <roles>
+        <role>Developer</role>
+      </roles>
+      <timezone>-8</timezone>
+      <properties/>
+    </developer>
+  </developers>
+
+</project>
